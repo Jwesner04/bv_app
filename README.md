@@ -11,15 +11,20 @@
 3. Once in, run in the terminal the following: 
 
 ```bash
-dos2unix runapp.sh
+dos2unix runApp.sh
 ```
 ```bash
-./runapp.sh --deploy
+./runApp.sh --deploy
 ```
 
 4. Open a new terminal and run the following command to get react up and running:
+5. Update the project with all node dependencies. This may take some time:
 ```bash
-./runapp.sh --react
+./runApp.sh --update
+```
+6. Run react
+```bash
+./runApp.sh --react
 ```
 
-5. This will open a new browser with the running localhost.
+7. This will open a new browser with the running localhost.
