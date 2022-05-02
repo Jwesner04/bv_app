@@ -1,7 +1,7 @@
 # SETUP
 1. Install Visual Studio Code, if not already installed.
 2. Install Docker Desktop https://docs.docker.com/desktop/windows/install/
-3. Download bv_app and unzip 
+3. Download bv_app and unzip OR clone here: https://github.com/Jwesner04/bv_app
 4. Open Visual Studio Code and Choose to open existing folder. Go to the bv_app folder downloaded in step 3.
 5. Open Docker Desktop. This just needs to be running, no need to login
 
