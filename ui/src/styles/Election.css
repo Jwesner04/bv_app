@@ -1,0 +1,24 @@
+.heading {
+    /* At the bottom. Use top:0 to append it to the top background: rgb(212, 226, 240); */
+    opacity: 0.3;
+    /* Black background with 0.5 opacity */
+    display: flex;
+    padding: 30px;
+}
+
+.CandidateForm {
+    margin-bottom: 30px;
+}
+
+.textOverride {
+    color: white;
+}
+
+.form {
+    background: rgb(236, 236, 236);
+    padding: 50px;
+}
+
+.spacer15 {
+    height: 15px;
+}

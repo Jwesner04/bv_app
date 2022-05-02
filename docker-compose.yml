@@ -1,0 +1,50 @@
+# -------------------------------------------------------------------------- #
+# The below code is a test dockerfile used to build a base image for         #
+# final ASU project development environment.                                 #
+#                                                                            #
+# © 2022 Jonathan Wesner                                                     #
+#                                                                            #
+# command: docker-compose up --detach                                        #
+# -------------------------------------------------------------------------- #
+version: "3.9"
+
+# --------------------------------------------------------------------------
+# HOW TO RENDER REACT WITHIN CONTAINER
+#    - must include setup.js in ./interface folder
+#    - update package.json to run setup.js with:
+#        "scripts": {
+#            "start": "node ./setup && react-scripts start",
+#    - must include NODE_ENV=developement as environment var
+# ----
+services:
+  demoApp:
+    image: workspace:latest
+    #build:
+    #  context: .
+    #  dockerfile: Dockerfile
+    environment:
+      - RPC_HOST=blockchainDb
+      - CHOKIDAR_USEPOLLING=true
+      - NODE_ENV=development
+    command: bash -c "tail -f /dev/null"
+    # ----------------------------------------------------------------------
+    # References: 
+    #  https://docs.docker.com/compose/compose-file/compose-file-v3/#network_mode
+    #  https://docs.docker.com/network/bridge/
+    #
+    # Create an internal network if desired i.e. bva-net:
+    #  "docker network create bva-net"
+    # ----
+    #networks:
+    #- bva-net
+    volumes:
+      - .:/workspace
+
+  ethdb:
+    image: trufflesuite/ganache-cli:latest
+    ports:
+      - '8545:8545'
+    stdin_open: true
+    tty: true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

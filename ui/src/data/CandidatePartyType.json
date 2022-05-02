@@ -1,0 +1,20 @@
+{
+    "parties": [
+        {
+            "key": 1,
+            "party": "N/A"
+        },
+        {
+            "key": 2,
+            "party": "Independent"
+        },
+        {
+            "key": 3,
+            "party": "Democrat"
+        },
+        {
+            "key": 4,
+            "party": "Republican"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+.d-flex {
+    padding: 10px;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.transparent {
+    position: absolute;
+    /* Position the background text */
+    bottom: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(18, 28, 38);
+    /* Fallback color */
+    background: rgba(18, 28, 38, 0.8);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    /* Grey text */
+    width: 100%;
+    /* Full width */
+    padding: 20px;
+    /* Some padding */
+}
+
+.spacer15 {
+    height: 15px;
+}

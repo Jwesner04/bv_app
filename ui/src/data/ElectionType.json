@@ -1,0 +1,24 @@
+{
+    "types": [
+        {
+            "key": 1,
+            "type": "General Election"
+        },
+        {
+            "key": 2,
+            "type": "Primary Election"
+        },
+        {
+            "key": 3,
+            "type": "Special Election"
+        },
+        {
+            "key": 4,
+            "type": "Presidential Election"
+        },
+        {
+            "key": 5,
+            "type": "Custom Election"
+        }
+    ]
+}

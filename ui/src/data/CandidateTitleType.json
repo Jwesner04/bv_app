@@ -1,0 +1,29 @@
+{
+    "titles": [
+        {
+            "key": 1,
+            "title": "N/A",
+            "count": 0
+        },
+        {
+            "key": 2,
+            "title": "President",
+            "count": 0
+        },
+        {
+            "key": 3,
+            "title": "Senator",
+            "count": 0
+        },
+        {
+            "key": 4,
+            "title": "Representative",
+            "count": 0
+        },
+        {
+            "key": 5,
+            "title": "Governor",
+            "count": 0
+        }
+    ]
+}
